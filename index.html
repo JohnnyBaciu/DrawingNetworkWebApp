@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ff5733;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    border: 2px solid transparent;
+    width: 240px;
+    height: 60px;
+  }
+  .button img {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+  }
+  .button-google {
+    background-color: #687df1;
+  }
+  .button-yahoo {
+    background-color: #814d97;
+  }
+  .button-hotmail {
+    background-color: #5b7296;
+  }
+  .button:hover {
+    opacity: 0.9;
+  }
+  .continue{
+    color:#000000
+  }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Sign In To Enter Game</h1>
+    <img src="images/game.png" width="200px">
+
+  <!--  Login Button -->
+  <p>Sign in to Continue</p>
+  <a href="login.php" class="button button-google">
+    <img src="images/green.png" alt="RELOAD">
+    <p class="continue">Log Into Your Account </p><p style="font-size: 10px; color:#000000"></p>
+  </a>
+
+  <!--  Login Button -->
+  <a href="create.php" class="button button-yahoo">
+    <img src="images/blue.png" alt="RELOAD" >
+    <p class="continue">Create an Account </p>
+  </a>
+
+  
+</div>
+
+</body>
+</html>
